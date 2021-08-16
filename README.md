@@ -1,5 +1,5 @@
 # WP React Starter Plugin
-Demonstration of the use of **React in WordPress Plugin in 2020**.
+Demonstration of the use of **React in WordPress Plugin in 2021**.
 
 ## Installation
 1. Clone the repository into plugins folder or download the project and place the code in ``plugins/wp-react-starter-plugin`` folder.

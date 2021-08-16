@@ -1,6 +1,6 @@
 {
   "name": "wp-react-starter-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Demonestration for the use of React in WP plugin",
   "main": "index.js",
   "scripts": {
@@ -21,10 +21,9 @@
   "author": "Shazahanul Islam Shohag",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "12.1.0"
+    "@wordpress/scripts": "^17.1.0"
   },
   "dependencies": {
-    "@wordpress/babel-plugin-import-jsx-pragma": "^2.7.0",
-    "@wordpress/element": "^2.16.0"
+    "@wordpress/element": "^4.0.0"
   }
 }

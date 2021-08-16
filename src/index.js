@@ -1,11 +1,9 @@
-import { render, Component } from '@wordpress/element';
+import { render } from '@wordpress/element';
 
-class App extends Component {
-    render() {
-        return (
-            <h1>Hey! I'm from WP React Starter Plugin</h1>
-        );
-    }
+const App = () => {
+    return (
+        <h1>Hey! I'm from WP React Starter Plugin OK</h1>
+    );
 }
 
 render(
