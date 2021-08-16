@@ -110,8 +110,7 @@ final class WPReactStarterPlugin {
 	 * @return void
 	 */
 	public function plugin_functionality() {
-		add_action( 'wp_enqueue_scripts', array( $this, 'register_assets' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'register_assets' ) );
+		add_action( 'init', array( $this, 'register_assets' ) );
 		add_action( 'admin_menu', array( $this, 'add_menu' ) );
 	}
 
@@ -129,6 +128,13 @@ final class WPReactStarterPlugin {
 			$index_asset['dependencies'],
 			$index_asset['version'],
 			false
+		);
+
+		wp_register_style(
+			'wprsp-style-css',
+			WPRSP_ASSETS_REACT . '/index.css',
+			array(),
+			$index_asset['version']
 		);
 	}
 
@@ -158,6 +164,7 @@ final class WPReactStarterPlugin {
 	 */
 	public function settings_page() {
 		wp_enqueue_script( 'wprsp-index' );
+		wp_enqueue_style( 'wprsp-style-css' );
 		echo '<div class="wrap"><div id="wprsp"></div></div>';
 	}
 }

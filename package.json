@@ -21,9 +21,13 @@
   "author": "Shazahanul Islam Shohag",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "^17.1.0"
+    "@wordpress/scripts": "^17.1.0",
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.3",
     "@wordpress/element": "^4.0.0"
   }
 }
