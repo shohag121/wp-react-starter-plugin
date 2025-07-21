@@ -21,7 +21,7 @@
   "author": "Shazahanul Islam Shohag",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
-    "@wordpress/scripts": "^17.1.0"
+    "@wordpress/scripts": "^30.19.0"
   },
   "dependencies": {
     "@wordpress/element": "^4.0.0"
